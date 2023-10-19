@@ -498,6 +498,26 @@ win.document.body.appendChild(iframe)
             <h2>Fortnite (controller required)</h2>
             <p>
               to play fortnite go to https://www.xbox.com/en-US/play/launch/fortnite/BT5P2X999VH2 and sign into your xbox account
+
+                          <html><head><base target="_blank">
+
+</head>
+<body>
+<button onclick="openGame()">Play in fullscreen</button>
+<script>
+function openGame() {
+var win = window.open()
+var url = "https://www.xbox.com/en-US/play/launch/fortnite/BT5P2X999VH2"
+var iframe = win.document.createElement('iframe')
+iframe.style.width = "100%";
+iframe.style.height = "100%";
+iframe.style.border = "none";
+iframe.src = url
+win.document.body.appendChild(iframe)
+}
+</script>
+
+</body></html>
         
             </p>
           </div>
